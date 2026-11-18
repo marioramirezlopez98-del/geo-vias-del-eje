@@ -39,3 +39,11 @@ Table Reports {
 Ref: Reports.created_by > users.id
 Ref: Reports.finalized_by > users.id
 ```
+## Endpoints
+
+- POST/api/signup - Permite registrar un nuevo usuario en el sistema
+- POST/api/login - Permite iniciar sesión para un nuevo usuario en el sistema
+- POST/api/reports - Permite crear nuevos reportes en el sistema
+- GET/api/reports - Permite consultar los reportes más recientes
+- PUT/api/reports/{id}/finalize - Permite actualizar los reportes más recientes
+  
