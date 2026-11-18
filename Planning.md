@@ -1,32 +1,22 @@
-Historias de usuario
+## Historias de usuario
 
 
-Como usuario
-Quiero registrarme
-Para acceder a la plataforma
+* **Como usuario**, quiero registrarme para acceder a la plataforma
 
-Como usuario
-Quiero iniciar sesión
-Para acceder a la plataforma
+* **Como usuario**, quiero iniciar sesión para acceder a la plataforma
 
-Como conductor
-Quiero conocer el acceso a las vías
-Para evitar el tráfico
+* **Como conductor**, quiero conocer el acceso a las vías para evitar el tráfico
 
-Como conductor
-Quiero filtrar los reportes por tipo y fecha
-Para tomar decisiones en el trayecto
+* **Como conductor**, quiero filtrar los reportes por tipo y fecha para tomar decisiones en el trayecto
 
-Como ciudadano
-Quiero reportar el estado de las calles
-Para mejorar la movilidad
+* **Como ciudadano**, quiero reportar el estado de las calles para mejorar la movilidad
 
-Como ciudadano
-Quiero finalizar reportes de otros usuarios
-Para evitar información desactualizada
+* **Como ciudadano**, quiero finalizar reportes de otros usuarios para evitar información desactualizada
+
+## Modelo de Datos
 
 
-
+```dbml
 Table users {
   id integer [primary key]
   username varchar
@@ -48,3 +38,4 @@ Table Reports {
 
 Ref: Reports.created_by > users.id
 Ref: Reports.finalized_by > users.id
+```
